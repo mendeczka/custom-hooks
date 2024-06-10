@@ -1,1 +1,12 @@
 vite.config.ts
+src/tests
+node_modules
+build
+dist
+.vscode
+public
+*.test.js
+*.test.jsx
+*.test.ts
+*.test.tsx
+.husky
