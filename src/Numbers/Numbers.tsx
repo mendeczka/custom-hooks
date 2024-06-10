@@ -1,18 +1,8 @@
-import { useState } from 'react';
+import { useNumbers } from '../hooks/useNumbers';
 
 export const Numbers = () => {
-  const [numbers, setNumbers] = useState<number[]>([]);
+  const { numbers, handleNumberGen, handleNumberDel } = useNumbers();
 
-  const handleNumberGen = () => {
-    const num = Math.round(Math.random() * 100000);
-    setNumbers((prevNum) => [...prevNum, num]);
-  };
-
-  const handleNumberDel = (indexToDel: number) => {
-    setNumbers((prevNumbers) =>
-      prevNumbers.filter((_, index) => index !== indexToDel),
-    );
-  };
   return (
     <div>
       <ul>
