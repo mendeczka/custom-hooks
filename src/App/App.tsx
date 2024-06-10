@@ -1,9 +1,10 @@
 import './App.css';
+import { Numbers } from '../Numbers/Numbers';
 
 export const App = () => {
   return (
     <>
-      <h1>test</h1>
+      <Numbers />
     </>
   );
 };
